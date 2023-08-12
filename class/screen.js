@@ -76,8 +76,8 @@ class Screen {
         console.log(`${key.name} not supported.`);
         Screen.printCommands();
       } else {
-        Screen.render();
         Screen.commands[key.name].execute();
+        Screen.render();
       }
     });
 
